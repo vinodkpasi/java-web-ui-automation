@@ -36,7 +36,6 @@ public class BaseTest {
 
 	@AfterMethod
 	public void tearup() throws InterruptedException {
-		Thread.sleep(5000);
 		driver.quit();
 	}
 
