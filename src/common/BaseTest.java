@@ -35,8 +35,7 @@ public class BaseTest {
 	}
 
 	@AfterMethod
-	public void tearup() throws InterruptedException {
+	public void teardown() throws InterruptedException {
 		driver.quit();
 	}
-
 }
