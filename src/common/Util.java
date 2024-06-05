@@ -58,4 +58,14 @@ public class Util {
 		String path = url.getFile().substring(0, url.getFile().lastIndexOf('/'));
         return url.getProtocol() + "://" + url.getHost() + path;
 	}
+
+	public static void scrollIntoView(WebDriver driver, WebElement element)  {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView()",element);
+	}
+
+	public static void jsClick(WebDriver driver, WebElement element)  {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click()",element);
+	}
 }
